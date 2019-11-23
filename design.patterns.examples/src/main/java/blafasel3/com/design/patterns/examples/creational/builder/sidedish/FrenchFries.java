@@ -12,4 +12,9 @@ public class FrenchFries implements Sidedish {
 		return 1.99;
 	}
 
+	@Override
+	public boolean isVegetarian() {
+		return true;
+	}
+
 }

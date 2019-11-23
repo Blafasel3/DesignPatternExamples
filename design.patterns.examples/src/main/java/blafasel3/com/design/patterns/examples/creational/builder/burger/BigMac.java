@@ -12,4 +12,9 @@ public class BigMac implements Burger {
 		return 3.50;
 	}
 
+	@Override
+	public boolean isVegetarian() {
+		return false;
+	}
+
 }

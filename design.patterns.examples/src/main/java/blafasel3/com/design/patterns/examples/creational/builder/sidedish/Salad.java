@@ -12,4 +12,9 @@ public class Salad implements Sidedish {
 		return 2.99;
 	}
 
+	@Override
+	public boolean isVegetarian() {
+		return true;
+	}
+
 }

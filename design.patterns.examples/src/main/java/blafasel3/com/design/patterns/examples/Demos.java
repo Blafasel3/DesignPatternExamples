@@ -12,10 +12,12 @@ public class Demos {
 		System.out.println("Veg Meal");
 		vegMeal.showItems();
 		System.out.println("Total Cost: " + vegMeal.getPrice());
+		System.out.println("Is Vegetarian: " + vegMeal.isVegetarian());
 
 		Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
 		System.out.println("\n\nNon-Veg Meal");
 		nonVegMeal.showItems();
 		System.out.println("Total Cost: " + nonVegMeal.getPrice());
+		System.out.println("Is Vegetarian: " + nonVegMeal.isVegetarian());
 	}
 }

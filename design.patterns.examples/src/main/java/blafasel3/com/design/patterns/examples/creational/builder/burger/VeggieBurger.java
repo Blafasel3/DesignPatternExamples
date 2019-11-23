@@ -12,4 +12,9 @@ public class VeggieBurger implements Burger {
 		return 3.20;
 	}
 
+	@Override
+	public boolean isVegetarian() {
+		return true;
+	}
+
 }

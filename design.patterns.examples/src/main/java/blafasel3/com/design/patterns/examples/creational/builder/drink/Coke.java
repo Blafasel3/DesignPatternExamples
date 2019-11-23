@@ -12,4 +12,9 @@ public class Coke implements Drink {
 		return 1.50;
 	}
 
+	@Override
+	public boolean isVegetarian() {
+		return false;
+	}
+
 }
