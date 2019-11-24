@@ -4,11 +4,10 @@ package blafasel3.com.design.patterns.examples.creational.builder;
  * Example as found on
  * https://www.tutorialspoint.com/design_pattern/builder_pattern.htm
  */
-public class Bottle implements Packing {
+public interface MenuItem extends Vegetarian {
+	String getName();
 
-	@Override
-	public String pack() {
-		return "Bottle";
-	}
+	Packing getPacking();
 
+	double getPrice();
 }
