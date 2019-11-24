@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
-import org.apache.commons.lang3.StringUtils;
-
 /**
  * Example as found on
  * https://www.tutorialspoint.com/design_pattern/builder_pattern.htm
@@ -32,16 +30,6 @@ public class Menu implements Vegetarian {
 
 	public double getPrice() {
 		return this.price;
-	}
-
-	public String showItems() {
-		this.mealItems.stream().forEach(mealItem -> {
-			System.out.println(mealItem.getName() + ": " + mealItem.getPrice());
-		});
-		this.mealItems.stream().forEach(mealItem -> {
-			System.out.println(mealItem.getName() + ": " + mealItem.getPrice());
-		});
-		return StringUtils.EMPTY;
 	}
 
 	public Collection<MenuItem> getItems() {
