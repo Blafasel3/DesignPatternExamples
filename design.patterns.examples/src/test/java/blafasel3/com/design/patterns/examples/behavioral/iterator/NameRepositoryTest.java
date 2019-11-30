@@ -38,5 +38,13 @@ public class NameRepositoryTest {
 			assertTrue(nameIterator.hasNext());
 			assertEquals(string, nameIterator.next());
 		}
+
+		// new instance
+		nameIterator = testClass.getIterator();
+		int i = 0;
+		while (nameIterator.hasNext()) {
+			assertEquals(expectedNames[i], nameIterator.next());
+			++i;
+		}
 	}
 }
