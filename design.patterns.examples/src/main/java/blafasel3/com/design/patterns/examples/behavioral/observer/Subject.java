@@ -7,10 +7,11 @@ public class Subject<T> {
 	
 	private T value;
 	
-	private Set<Observer<T>> observers = new HashSet<Observer<T>>();
+	private final Set<Observer<T>> observers = new HashSet<Observer<T>>();
 
 	public void subscribe(Observer<T> observer) {
 		this.observers.add(observer);
+		observer.update(this.value);
 	}
 	
 	public void unsubscribe(Observer<T> observer) {
