@@ -35,7 +35,7 @@ class SubjectTest {
 
 		subject.subscribe(observableMock);
 		verify(observableMock, times(1)).update(value);
-		
+
 		this.subject.setValue(value);
 		verify(observableMock, times(2)).update(value);
 
@@ -59,7 +59,7 @@ class SubjectTest {
 
 	@Test
 	@DisplayName("Should call observer on subscription")
-	void shouldCallObserverOnSubscriptionWithCurrentValue() {
+	void y() {
 		subject.setValue(value);
 		subject.subscribe(observableMock);
 		verify(observableMock, times(1)).update(value);
