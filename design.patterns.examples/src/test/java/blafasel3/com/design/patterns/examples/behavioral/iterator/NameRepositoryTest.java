@@ -1,11 +1,9 @@
 package blafasel3.com.design.patterns.examples.behavioral.iterator;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class NameRepositoryTest {
 
@@ -15,7 +13,7 @@ public class NameRepositoryTest {
 		NameRepository testClass = new NameRepository(null);
 		Iterator<String> nameIterator = testClass.getIterator();
 		assertFalse(nameIterator.hasNext());
-		assertEquals(null, nameIterator.next());
+		assertNull(nameIterator.next());
 	}
 
 	@Test
@@ -24,7 +22,7 @@ public class NameRepositoryTest {
 		NameRepository testClass = new NameRepository(new String[] {});
 		Iterator<String> nameIterator = testClass.getIterator();
 		assertFalse(nameIterator.hasNext());
-		assertEquals(null, nameIterator.next());
+		assertNull(nameIterator.next());
 	}
 
 	@Test

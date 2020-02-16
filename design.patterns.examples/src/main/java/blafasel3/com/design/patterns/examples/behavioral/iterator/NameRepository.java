@@ -1,9 +1,11 @@
 package blafasel3.com.design.patterns.examples.behavioral.iterator;
 
-public class NameRepository {
-	public String names[];
+import java.util.Arrays;
 
-	public NameRepository(String names[]) {
+public class NameRepository {
+	public String[] names;
+
+	public NameRepository(String[] names) {
 		this.names = names;
 	}
 
